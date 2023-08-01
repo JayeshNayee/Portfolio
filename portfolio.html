@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>jayesh.in</title>
+    <link rel="stylesheet" href="portfolio.css">
+
+    <!-- font-awsome-link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+ 
+
+        <!-- google font-link -->
+
+</head>
+<body>
+    <div class="hero-header">
+        <div class="wrapper">
+            <header>
+                <div class="logo">
+                    <i class="fa-solid fa-a"></i>
+                    <div class="logo-text">Jayesh Nayee</div>
+                </div>
+                <nav>
+                    <div class="togglebtn">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                    <ul class="navlinks">
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">Portfolio</a></li>
+                        <li><a href="#">Resume</a></li>
+                        <!-- <li><a href="#">Blog</a></li> -->
+                        <li><a href="#">Contact</a></li>
+                    </ul>
+                </nav>
+            </header>
+            <div class="containier">
+                <div class="hero-pic">
+                    <img src="" alt="" >
+                </div>
+                <div class="hero-text">
+                    <h5>Hi I'm <span class="input">Developer</span></h5>
+                    <h1>Jayesh Nayee</h1>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sapiente sint minus dicta, qui molestias vero sunt iure maxime voluptatibus consequuntur sed repellat hic. Illo culpa debitis perspiciatis nostrum tenetur perferendis?</p>
+                </div>
+                <div class="btn-group">
+                    <a href="#" class="btn">Download CV</a>
+                    <a href="#"class="btn">Contact</a>
+                </div>
+                <div class="social">
+                    <a href="https://twitter.com/JayeshNayee02"><i class="fa-brands fa-twitter"></i></a>
+                    <a href="https://www.linkedin.com/in/jayesh-nayee-506024217"><i class="fa-brands fa-linkedin"></i></a>
+                    
+                    <a href="https://github.com/JayeshNayee"><i class="fa-brands fa-github"></i></a>
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.10/typed.js" integrity="sha512-tQQXRDB2wEmuJGtFrmmoFYzNTq8StA1XJrfO0OQbbTxd9G0CwaTDL6/C1y805IlvBVrMwOqob1kf6r/2U5XXVg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script>
+        var togglebtn = document.querySelector(".togglebtn");
+
+        var nav = document.querySelector(".navlinks");
+
+        var link = document.querySelector(".navlinks li");
+
+        togglebtn.addEventListener("click",function(){
+            this.classList.toggle("click");
+            nav.classList.toggle("open");
+        })
+
+        var typed = new Typed(".input",{
+            string:["Web Developer","Software Developer"],
+            typedSpeed:70,
+            backSpeed:55,
+            loop :true
+        })
+    </script>
+</body>
+</html>
